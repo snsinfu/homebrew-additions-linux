@@ -2,7 +2,7 @@ Linuxbrew additional formulae
 =============================
 
 ```
-brew tap snsinfu/linuxbrew-additions
+brew tap snsinfu/homebrew-additions-linux
 ```
 
 ## Package
