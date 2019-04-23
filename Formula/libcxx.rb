@@ -1,19 +1,19 @@
 class Libcxx < Formula
   desc "LLVM libc++ and libc++abi"
   homepage "https://libcxx.llvm.org/"
-  version "7.0.1"
+  version "8.0.0"
 
-  url "https://releases.llvm.org/7.0.1/llvm-7.0.1.src.tar.xz"
-  sha256 "a38dfc4db47102ec79dcc2aa61e93722c5f6f06f0a961073bd84b78fb949419b"
+  url "https://releases.llvm.org/8.0.0/llvm-8.0.0.src.tar.xz"
+  sha256 "8872be1b12c61450cacc82b3d153eab02be2546ef34fa3580ed14137bb26224c"
 
   resource "libcxx" do
-    url "https://releases.llvm.org/7.0.1/libcxx-7.0.1.src.tar.xz"
-    sha256 "020002618b319dc2a8ba1f2cba88b8cc6a209005ed8ad29f9de0c562c6ebb9f1"
+    url "https://releases.llvm.org/8.0.0/libcxx-8.0.0.src.tar.xz"
+    sha256 "c2902675e7c84324fb2c1e45489220f250ede016cc3117186785d9dc291f9de2"
   end
 
   resource "libcxxabi" do
-    url "https://releases.llvm.org/7.0.1/libcxxabi-7.0.1.src.tar.xz"
-    sha256 "8168903a157ca7ab8423d3b974eaa497230b1564ceb57260be2bd14412e8ded8"
+    url "https://releases.llvm.org/8.0.0/libcxxabi-8.0.0.src.tar.xz"
+    sha256 "c2d6de9629f7c072ac20ada776374e9e3168142f20a46cdb9d6df973922b07cd"
   end
 
   depends_on "cmake" => :build
