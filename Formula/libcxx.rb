@@ -1,19 +1,19 @@
 class Libcxx < Formula
   desc "LLVM libc++ and libc++abi"
   homepage "https://libcxx.llvm.org/"
-  version "8.0.0"
+  version "10.0.0"
 
-  url "https://releases.llvm.org/8.0.0/llvm-8.0.0.src.tar.xz"
-  sha256 "8872be1b12c61450cacc82b3d153eab02be2546ef34fa3580ed14137bb26224c"
+  url "https://github.com/llvm/llvm-project/releases/download/llvmorg-#{version}/llvm-#{version}.src.tar.xz"
+  sha256 "df83a44b3a9a71029049ec101fb0077ecbbdf5fe41e395215025779099a98fdf"
 
   resource "libcxx" do
-    url "https://releases.llvm.org/8.0.0/libcxx-8.0.0.src.tar.xz"
-    sha256 "c2902675e7c84324fb2c1e45489220f250ede016cc3117186785d9dc291f9de2"
+    url "https://github.com/llvm/llvm-project/releases/download/llvmorg-#{Libcxx.version}/libcxx-#{Libcxx.version}.src.tar.xz"
+    sha256 "270f8a3f176f1981b0f6ab8aa556720988872ec2b48ed3b605d0ced8d09156c7"
   end
 
   resource "libcxxabi" do
-    url "https://releases.llvm.org/8.0.0/libcxxabi-8.0.0.src.tar.xz"
-    sha256 "c2d6de9629f7c072ac20ada776374e9e3168142f20a46cdb9d6df973922b07cd"
+    url "https://github.com/llvm/llvm-project/releases/download/llvmorg-#{Libcxx.version}/libcxxabi-#{Libcxx.version}.src.tar.xz"
+    sha256 "e71bac75a88c9dde455ad3f2a2b449bf745eafd41d2d8432253b2964e0ca14e1"
   end
 
   depends_on "cmake" => :build
